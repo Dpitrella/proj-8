@@ -243,6 +243,13 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.info-foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+
+}
 
 @media all and (max-width: 1180px) {
 	.picture {

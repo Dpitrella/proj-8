@@ -6,7 +6,7 @@
 	<meta name="description"
 		content="Nina Cardicci, photographe mariage, photographe professionnel, photo portrait, photo professionnelle, photographe evenementiel, photographe corporate, photographe entreprise, concerts, pour les entreprises, photographe, retouches, shooting ">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -28,16 +28,15 @@
 		{
 		  "@context": "https://schema.org",
 		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci"
-		  "address": 
-		{
+		  "name": "Nina Carducci",
+		  "address": {
 			"@type": "PostalAddress",
 			"streetAddress": "68 avenue Alsace-Lorraine",
 			"addressLocality": "Bordeaux",
 			"addressCountry": "France",
 			"postalCode": "33200"
-		},
-		  "image": "nina_petit.WebP"
+		  },
+		  "image": "nina_petit.WebP",
 		  "telephone": "05 56 67 78 89",
 		  "openingHours": "Mo-Fr 10:00-19:00"
 		}
@@ -81,37 +80,36 @@
 						aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
-					<picture class="carousel-item active">
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-petit.WebP"
-							media="(max-width:480px)">
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-moyen.WebP"
-							media="(max-width:768px)">
-						<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-gros.WebP"
-							media="(max-width:1980px)">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.WebP" class="d-block w-100"
-							alt="un homme traver la rue" >
-					</picture>
-
-					<picture class="carousel-item" >
-						<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-petit.WebP"
-							media="(max-width:480px)" >
-						<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-moyen.WebP"
-							media="(max-width:768px)">
-						<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-gros.WebP"
-							media="(max-width:1980px)">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.WebP" class="d-block w-100"
-							alt="un public enthousiaste">
-					</picture>
-					<picture class="carousel-item">
-						<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-petit.WebP"
-							media="(max-width:480px)">
-						<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-moyen.WebP"
-							media="(max-width:768px)">
-						<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-gros.WebP"
-							media="(max-width:1980px)">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.WebP"
-							class="d-block w-100" alt="un homme et une femme mariés qui dansent" >
-					</picture>
+					<div class="carousel-item active">
+					  <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.WebP"
+						   srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-petit.WebP 480w,
+								   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-moyen.WebP 768w,
+								   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-gros.WebP 1980w"
+						   sizes="100vw"
+						   class="d-block w-100"
+						   alt="Un homme traverse la rue">
+					</div>
+				  
+					<div class="carousel-item">
+					  <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.WebP"
+						   srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-petit.WebP 480w,
+								   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-moyen.WebP 768w,
+								   ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-gros.WebP 1980w"
+						   sizes="100vw"
+						   class="d-block w-100"
+						   alt="Un public enthousiaste">
+					</div>
+				  
+					<div class="carousel-item">
+					  <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.WebP"
+						   srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-petit.WebP 480w,
+								   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-moyen.WebP 768w,
+								   ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-gros.WebP 1980w"
+						   sizes="100vw"
+						   class="d-block w-100"
+						   alt="Un homme et une femme mariés qui dansent">
+					</div>
+				  </div>
 				
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

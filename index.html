@@ -41,6 +41,7 @@
 		  "openingHours": "Mo-Fr 10:00-19:00"
 		}
 		</script>
+		
 
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer
@@ -62,8 +63,14 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.png" alt="logo instagram" loading="lazy"></a>
+				<li><a class="social-link" 
+					href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+					target="_blank"
+					title="Accédez au profil Instagram de Nina Carducci"
+					onmouseover="window.status='Va sur Instagram'; return true;"
+					onmouseout="window.status='';">
+					 <img src="assets/images/instagram.png" alt="logo instagram" loading="lazy">
+				 </a>
 				</li>
 			</ul>
 		</div>
@@ -113,12 +120,12 @@
 				
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
+					data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0);">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
+					data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0);">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
